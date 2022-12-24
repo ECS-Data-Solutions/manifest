@@ -1,0 +1,2 @@
+# manifest
+ECS Manifest Schema 
