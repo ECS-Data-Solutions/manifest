@@ -16,23 +16,25 @@
         "items": {}
       },
       "commands": {
-        "type": "object",
-        "properties": {
-          "description": {
-            "type": "string"
+        "*": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "usage": {
+              "type": "string"
+            },
+            "aliases": {
+              "type": "array"
+            }
           },
-          "usage": {
-            "type": "string"
-          },
-          "aliases": {
-            "type": "array"
-          }
-        },
-        "required": [
-          "description",
-          "usage",
-          "aliases"
-        ]
+          "required": [
+            "description",
+            "usage",
+            "aliases"
+          ]
+        }
       }
     },
     "required": [
@@ -41,5 +43,6 @@
       "description",
       "authors",
       "commands"
-    ]
+    ],
+    "deprecated": false
 }
