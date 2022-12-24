@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "authors": {
+        "type": "array",
+        "items": {}
+      },
+      "commands": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "usage": {
+            "type": "string"
+          },
+          "aliases": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "description",
+          "usage",
+          "aliases"
+        ]
+      }
+    },
+    "required": [
+      "name",
+      "version",
+      "description",
+      "authors",
+      "commands"
+    ]
+}
